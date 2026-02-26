@@ -22,7 +22,9 @@ return {
                 variant = "wave", -- wave | dragon | lotus
             })
             vim.cmd.colorscheme("kanagawa-wave")
-            enable_transparency()
+            if vim.g.transparent_background then
+                enable_transparency()
+            end
         end,
     },
     {

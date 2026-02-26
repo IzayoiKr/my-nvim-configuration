@@ -10,6 +10,11 @@ return {
         local conf = require("telescope.config").values
 
         local function toggle_telescope(harpoon_files)
+            if #harpoon_files.items == 0 then
+                vim.notify("Harpoon list is empty", vim.log.levels.INFO)
+                return
+            end
+
             local file_paths = {}
             for _, item in ipairs(harpoon_files.items) do
                 table.insert(file_paths, item.value)

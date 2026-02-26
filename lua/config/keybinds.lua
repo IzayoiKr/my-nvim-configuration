@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- vim.keymap.set("n", "<leader>cd", vim.cmd.Ex, { desc = "Open file explorer" })
-vim.keymap.set("n", "<leader>t", vim.cmd.terminal, { desc = "Open interactive terminal" })
+-- vim.keymap.set("n", "<leader>t", vim.cmd.terminal, { desc = "Open interactive terminal" })
 vim.keymap.set("n", "<leader>ss", ":w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>sq", ":wq<CR>", { desc = "Save and quit file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
